@@ -11,7 +11,7 @@ if(empty($_GET['name']) === false || empty($_GET['mail']) === false || empty($_G
         }
     }
     else {
-        $esito = "Non inserito nessun dato o i dati inseriti non sono corretti, riprova";
+        $esito = "Non hai inserito nessun dato o i dati inseriti non sono corretti, riprova";
     }
 ?>
 

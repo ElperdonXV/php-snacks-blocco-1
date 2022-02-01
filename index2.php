@@ -25,14 +25,6 @@
             ]
         ]
     ];
-
-        foreach ($results as $key => $data) {
-            echo '<ul>Data: ' . $key;
-            foreach ($data as $result){
-                echo '<li>' . $result['titolo'] . '<br>' . $result['autore'] . '<br>' . $result['testo'] . '</li>';
-            }
-            echo '</ul>';
-    }   
 ?>
 
 <!DOCTYPE html>
@@ -44,6 +36,15 @@
     <title>Snacks</title>
 </head>
 <body>
+    <?php 
+    foreach ($results as $key => $data) {
+            echo '<ul>Data: ' . $key;
+            foreach ($data as $result){
+                echo '<li>' . $result['titolo'] . '<br>' . $result['autore'] . '<br>' . $result['testo'] . '</li>';
+            }
+            echo '</ul>';
+    }
+    ?>   
     <h1>Fatto!</h1>
 </body>
 </html>
